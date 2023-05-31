@@ -6,7 +6,7 @@
 #define pong_texturemanager_h
 
 #include "SDL.h"
-#include "SDL_ttf.h"
+#include "../../Libs/SDL2_ttf-2.20.2/include/SDL_ttf.h"
 #include "iostream"
 
 class TextureManager {

@@ -4,12 +4,13 @@
 
 #include "SDL.h"
 #include "Core/Engine.h"
+#define main SDL_main
 
 #define FPS 60
 
 Engine *game = nullptr;
 
-int main(int argc, char *argv[])
+int main(int argv, char** args)
 {
 	const int frameDelay = 1000 / FPS;
 

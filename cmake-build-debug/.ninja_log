@@ -1,0 +1,25 @@
+# ninja log v5
+568	770	7072681655885098	CMakeFiles/Pong.dir/Src/Core/Game.cpp.obj	cbe9cb52ae7b78aa
+7	567	7072681653863935	CMakeFiles/Pong.dir/Src/main.cpp.obj	236f89876efd74e4
+4	851	7072681656709731	CMakeFiles/Pong.dir/Src/Textures/TextureManager.cpp.obj	a0fd8f44c63b6def
+11	971	7072681657905694	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+971	1098	7072681659137140	Pong.exe	c003dca26c9ae2f3
+2	178	7072682749756326	build.ninja	7b2fff609baa32b6
+9	1279	7072683197406009	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+1280	1412	7072683198691119	Pong.exe	c003dca26c9ae2f3
+8	1023	7072683429780310	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+1023	1143	7072683430952300	Pong.exe	c003dca26c9ae2f3
+5	994	7072683816457241	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+994	1113	7072683817620756	Pong.exe	c003dca26c9ae2f3
+5	966	7072684184520631	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+966	1086	7072684185695973	Pong.exe	c003dca26c9ae2f3
+6	1026	7072684736548658	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+1026	1146	7072684737745766	Pong.exe	c003dca26c9ae2f3
+5	956	7072685117333414	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+957	1077	7072685118499760	Pong.exe	c003dca26c9ae2f3
+9	964	7072686769680897	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+964	1088	7072686770887442	Pong.exe	c003dca26c9ae2f3
+5	946	7072687085017011	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+947	1067	7072687086193396	Pong.exe	c003dca26c9ae2f3
+5	1018	7072687236795771	CMakeFiles/Pong.dir/Src/Core/Engine.cpp.obj	4e820ee29a9f86cf
+1018	1136	7072687237938743	Pong.exe	c003dca26c9ae2f3

@@ -3,9 +3,9 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="CMakePresetLoader"><![CDATA[{
-  "useNewFormat": true
-}]]></component>
+  <component name="CMakePresetLoader">{
+  &quot;useNewFormat&quot;: true
+}</component>
   <component name="CMakeReloadState">
     <option name="reloaded" value="true" />
   </component>
@@ -20,7 +20,196 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="273b76b6-6a24-4e56-a334-3e8cb77226cf" name="Changes" comment="" />
+    <list default="true" id="273b76b6-6a24-4e56-a334-3e8cb77226cf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/BUGS.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/COPYING.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/README-SDL.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/WhatsNew.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/cmake/sdl2-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/cmake/sdl2-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/CONTRIBUTING.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-android.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-cmake.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-directfb.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-dynapi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-emscripten.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-gdk.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-gesture.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-git.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-hg.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-ios.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-kmsbsd.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-linux.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-macos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-n3ds.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-nacl.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-ngage.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-os2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-pandora.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-platforms.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-porting.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-ps2.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-psp.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-raspberrypi.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-riscos.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-touch.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-versions.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-visualc.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-vita.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-wince.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-windows.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README-winrt.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/doxyfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/docs/release_checklist.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_atomic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_audio.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_bits.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_blendmode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_clipboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config.h.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config.h.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_android.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_iphoneos.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_macosx.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_macosx.h.orig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_minimal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_pandora.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_psp.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_windows.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_winrt.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_config_wiz.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_copying.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_cpuinfo.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_egl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_endian.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_error.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_events.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_filesystem.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_gamecontroller.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_gesture.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_guid.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_haptic.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_hidapi.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_hints.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_joystick.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_keyboard.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_keycode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_loadso.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_locale.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_main.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_messagebox.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_metal.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_misc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_mouse.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_mutex.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_name.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_opengl.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_opengl_glext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_opengles.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_opengles2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_opengles2_gl2.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_opengles2_gl2ext.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_opengles2_gl2platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_opengles2_khrplatform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_pixels.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_platform.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_power.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_quit.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_rect.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_render.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_revision.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_rwops.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_scancode.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_sensor.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_shape.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_stdinc.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_surface.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_system.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_syswm.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_assert.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_common.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_compare.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_crc32.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_font.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_fuzzer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_harness.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_images.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_log.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_md5.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_memory.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_test_random.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_thread.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_timer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_touch.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_types.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_version.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_video.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/SDL_vulkan.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/begin_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/include/close_code.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/lib/x64/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/lib/x64/SDL2.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/lib/x64/SDL2main.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/lib/x64/SDL2test.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/lib/x86/SDL2.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/lib/x86/SDL2.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/lib/x86/SDL2main.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2-2.26.3/lib/x86/SDL2test.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/CHANGES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/cmake/sdl2_mixer-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/cmake/sdl2_mixer-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/include/SDL_mixer.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/SDL2_mixer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/SDL2_mixer.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/optional/LICENSE.modplug.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/optional/LICENSE.ogg-vorbis.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/optional/LICENSE.opus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/optional/LICENSE.opusfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/optional/libmodplug-1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/optional/libogg-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/optional/libopus-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x64/optional/libopusfile-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/SDL2_mixer.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/SDL2_mixer.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/optional/LICENSE.modplug.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/optional/LICENSE.ogg-vorbis.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/optional/LICENSE.opus.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/optional/LICENSE.opusfile.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/optional/libmodplug-1.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/optional/libogg-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/optional/libopus-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_mixer-2.6.3/lib/x86/optional/libopusfile-0.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/CHANGES.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/LICENSE.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/README.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/cmake/sdl2_ttf-config-version.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/cmake/sdl2_ttf-config.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/include/SDL_ttf.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x64/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x64/LICENSE.harfbuzz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x64/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x64/SDL2_ttf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x64/SDL2_ttf.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x86/LICENSE.freetype.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x86/LICENSE.harfbuzz.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x86/LICENSE.zlib.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x86/SDL2_ttf.dll" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Libs/SDL2_ttf-2.20.2/lib/x86/SDL2_ttf.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Core/Engine.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Src/Core/Engine.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Core/Engine.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/Core/Engine.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/Textures/TextureManager.h" beforeDir="false" afterPath="$PROJECT_DIR$/Src/Textures/TextureManager.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Src/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Src/main.cpp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,6 +219,9 @@
     <option name="formatViaClangd" value="false" />
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -43,41 +235,39 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Mikołaj/Documents/GitHub/Pongu/Libs&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="CMake Application.Pong">
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Mikołaj\Documents\GitHub\Pongu\Libs" />
+    </key>
+  </component>
+  <component name="RunManager">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Pong" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pong" TARGET_NAME="Pong" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Pong" RUN_TARGET_NAME="Pong">
+    <configuration name="Pong" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" WORKING_DIR="file://$PROJECT_DIR$" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pong" TARGET_NAME="Pong" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Pong" RUN_TARGET_NAME="Pong">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
-    <configuration name="pong" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="Pong" TARGET_NAME="SigmaPong-master" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="Pong" RUN_TARGET_NAME="SigmaPong-master">
-      <method v="2">
-        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
-      </method>
-    </configuration>
-    <list>
-      <item itemvalue="CMake Application.pong" />
-      <item itemvalue="CMake Application.Pong" />
-    </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -88,6 +278,12 @@
       <option name="presentableId" value="Default" />
       <updated>1683830632381</updated>
       <workItem from="1683830635473" duration="298000" />
+      <workItem from="1683920276340" duration="161000" />
+      <workItem from="1685554731376" duration="9000" />
+      <workItem from="1685555404502" duration="8590000" />
+      <workItem from="1685564147258" duration="126000" />
+      <workItem from="1685564287420" duration="763000" />
+      <workItem from="1685565073417" duration="566000" />
     </task>
     <servers />
   </component>

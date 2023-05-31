@@ -2,6 +2,7 @@
 // Created by Mikołaj on 11.05.2023.
 //
 
+#include <SDL_mixer.h>
 #include "Engine.h"
 #include "../Objects/objects.h"
 #include "../Textures/TextureManager.h"
@@ -13,7 +14,9 @@ int playerOneScore, playerTwoScore;
 Paddle playerOne, playerTwo;
 Ball boll;
 TTF_Font *font = nullptr;
-SDL_Rect screenRect, scoreRec1, scoreRec2;
+Mix_Chunk *wallHitSound = nullptr;
+Mix_Chunk *paddleHitSound = nullptr;
+SDL_Rect screenRect, scoreRec1, scoreRec2, winRec;
 SDL_Texture *playerOne_score;
 SDL_Texture *playerTwo_score;
 
@@ -38,6 +41,7 @@ void Engine::init(const char *title, int xPos, int yPos, int width, int height, 
             windowShouldClose = true;
         }
     }
+    Mix_OpenAudio(44100, MIX_DEFAULT_FORMAT, 2, 2048);
     //Scoreboard
     screenRect = {0, 0, width, height};
     scoreRec1 = {static_cast<int>(width * 0.25), 50, 40, 60}; // x, y, w, h
@@ -60,14 +64,21 @@ void Engine::init(const char *title, int xPos, int yPos, int width, int height, 
     playerTwo.sdlRect.h = 100;
 
     //Ball
-    boll.speed = {10, 5};
+    boll.speed = { 10,  10};
     boll.sdlRect.x = 1280 / 2;
     boll.sdlRect.y = 720 / 2;
     boll.sdlRect.w = 20;
     boll.sdlRect.h = 20;
 
-    font = TTF_OpenFont("../Assets/pixel.ttf", 50);
+    font = TTF_OpenFont("Assets/pixel.ttf", 50);
     if (!font) {
+        printf("Fatal error!\n");
+        windowShouldClose = true;
+    }
+
+    wallHitSound = Mix_LoadWAV("Assets/WallHit.wav");
+    paddleHitSound = Mix_LoadWAV("Assets/PaddleHit.wav");
+    if ( !wallHitSound || !paddleHitSound ) {
         printf("Fatal error!\n");
         windowShouldClose = true;
     }
@@ -106,6 +117,14 @@ void Engine::update() {
             playerTwo_score = TextureManager::CreateTextureFromText(font, std::to_string(playerTwoScore), {255, 255, 255, 255},
                                                              renderer);
             play = true;
+
+            if(playerTwoScore == 10){
+                winRec = {static_cast<int>(screenRect.w * 0.15), static_cast<int>(screenRect.h * 0.25), static_cast<int>(screenRect.w * 0.75), static_cast<int>(screenRect.h * 0.4)};
+                SDL_RenderCopy(renderer, TextureManager::CreateTextureFromText(font, "Player Two Wins!", {255, 255, 255, 255}, renderer), nullptr, &winRec);
+                SDL_RenderPresent(renderer);
+                SDL_Delay(3000);
+                windowShouldClose = true;
+            }
         }
         if (boll.sdlRect.x > screenRect.w) { // Player 1 scores
             boll.sdlRect.x = screenRect.w / 2;
@@ -114,23 +133,47 @@ void Engine::update() {
             playerOne_score = TextureManager::CreateTextureFromText(font, std::to_string(playerOneScore), {255, 255, 255, 255},
                                                              renderer);
             play = true;
+
+            if(playerOneScore == 10){
+                winRec = {static_cast<int>(screenRect.w * 0.15), static_cast<int>(screenRect.h * 0.25), static_cast<int>(screenRect.w * 0.75), static_cast<int>(screenRect.h * 0.4)};
+                SDL_RenderCopy(renderer, TextureManager::CreateTextureFromText(font, "Player One Wins!", {255, 255, 255, 255}, renderer), nullptr, &winRec);
+                SDL_RenderPresent(renderer);
+                SDL_Delay(3000);
+                windowShouldClose = true;
+            }
         }
 
         if (boll.sdlRect.x == playerOne.sdlRect.x + playerOne.sdlRect.w && boll.sdlRect.y >= playerOne.sdlRect.y - 20 && boll.sdlRect.y <= playerOne.sdlRect.y + 100) { // Player 1
             boll.speed.x *= -1; // Change direction
-            boll.speed.y = (boll.sdlRect.y - playerOne.pos.y + 60) / (playerOne.sdlRect.h / 2) * 3; // Depend where hits paddle change speed
+            int paddleCenter = playerOne.sdlRect.y + playerOne.sdlRect.h / 2; // Środek paletki Player 1
+            int ballCenter = boll.sdlRect.y + boll.sdlRect.h / 2; // Środek piłki
+
+            int distanceFromCenter = ballCenter - paddleCenter; // Odległość od środka paletki
+
+            boll.speed.y = distanceFromCenter * 0.2; // Zależnie od miejsca trafienia w paletkę zmień prędkość
+
+            Mix_PlayChannel(-1, paddleHitSound, 0);
         }
 
         if (boll.sdlRect.x == playerTwo.sdlRect.x - playerTwo.sdlRect.w && boll.sdlRect.y >= playerTwo.sdlRect.y - 20 && boll.sdlRect.y <= playerTwo.sdlRect.y + 100) { // Player 2
             boll.speed.x *= -1; // Change direction
-            boll.speed.y = (boll.sdlRect.y - playerTwo.pos.y + 60) / (playerTwo.sdlRect.h / 2) * 3; // Depend where hits paddle change speed
+            int paddleCenter = playerTwo.sdlRect.y + playerTwo.sdlRect.h / 2; // Środek paletki Player 2
+            int ballCenter = boll.sdlRect.y + boll.sdlRect.h / 2; // Środek piłki
+
+            int distanceFromCenter = ballCenter - paddleCenter; // Odległość od środka paletki
+
+            boll.speed.y = distanceFromCenter * 0.2; // Zależnie od miejsca trafienia w paletkę zmień prędkość
+
+            Mix_PlayChannel(-1, paddleHitSound, 0);
         }
 
         if (playerOne.pos.y < 0){ // Paddle collision with walls
             playerOne.pos.y = 0;  // Player 1 stop paddle top
+            Mix_PlayChannel(-1, wallHitSound, 0);
         }
         if (playerOne.pos.y + playerOne.sdlRect.h > screenRect.h) {
             playerOne.pos.y = screenRect.h - playerOne.sdlRect.h;  // Player 1 stop paddle bottom
+            Mix_PlayChannel(-1, wallHitSound, 0);
         }
 
         if (playerTwo.pos.y < 0) {
@@ -145,7 +188,7 @@ void Engine::update() {
     else {
         playerOne.pos.y = screenRect.h / 2 - 20;  // Reset paddles
         playerTwo.pos.y = screenRect.h / 2 - 20;
-        boll.speed = {10, 5};               // Reset ball speed
+        boll.speed = { 10,  10};               // Reset ball speed
     }
 
     // Update paddle position
@@ -182,13 +225,38 @@ void Engine::render() {
     }
     SDL_RenderPresent(renderer);
 }
+//void Engine::renderWin() {
+//    // Draw:
+//    SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+//    SDL_RenderClear(renderer);
+//    SDL_Rect winRec = {screenRect.w / 2 - 100, screenRect.h / 2 - 50, 200, 100};
+//    if(playerOneScore == 1){
+//        SDL_Texture *playerOne_win = TextureManager::CreateTextureFromText(font, "Player 1 win!", {255, 255, 255, 255}, renderer);
+//        SDL_RenderCopy(renderer, playerOne_win, nullptr, &winRec);
+//    }
+//    else if(playerTwoScore == 10){
+//        SDL_Texture *playerTwo_win = TextureManager::CreateTextureFromText(font, "Player 2 win!", {255, 255, 255, 255}, renderer);
+//        SDL_RenderCopy(renderer, playerTwo_win, nullptr, &winRec);
+//    }
+
+
+//    SDL_SetRenderDrawColor(renderer, 255,255,255, 0.9);
+//
+//    SDL_RenderCopy(renderer, playerOne_score, nullptr, &scoreRec1);
+//    SDL_RenderCopy(renderer, playerTwo_score, nullptr, &scoreRec2);
+//
+//    SDL_RenderPresent(renderer);
+//}
 
 void Engine::clean() {
     TTF_CloseFont(font);
     SDL_DestroyTexture(playerOne_score);
     SDL_DestroyTexture(playerTwo_score);
+    Mix_FreeChunk(wallHitSound);
+    Mix_FreeChunk(paddleHitSound);
     SDL_DestroyWindow(window);
     SDL_DestroyRenderer(renderer);
+    Mix_Quit();
     TTF_Quit();
 }
 
